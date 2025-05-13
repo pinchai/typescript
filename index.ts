@@ -1,18 +1,4 @@
-interface student {
-    name: string,
-    age: number,
-    is_alive?: boolean
-}
-let std: student = {
-    name: 'dara',
-    age: 12
-}
-
-let std1: student = {
-    name: 'dara',
-    age: 12,
-    is_alive: false,
-}
-
-console.log(std)
-console.log(std1)
+let mixed: (string | number | boolean | [])[] = [1, "hello", 2];
+mixed.push(1)
+mixed.push("a")
+mixed.push(true)
